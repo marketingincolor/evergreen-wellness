@@ -1,3 +1,5 @@
+# Put your .git and .gitignore file in the root directory of your install.
+#
 # Ignore everything in the root except the "wp-content" directory.
 /*
 !.gitignore
