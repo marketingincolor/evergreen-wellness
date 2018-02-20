@@ -1,0 +1,106 @@
+.text-center { text-align: center; }
+@font-face {
+  font-family: 'boston-traffic';
+  src: url('./assets/fonts/Boston-Traffic/boston_traffic.ttf'); 
+}
+@font-face {
+    font-family: 'menlo';
+    src: url('./assets/fonts/Menlo-Regular.ttf');
+}
+@font-face {
+    font-family: 'zilla-slab';
+    src: url('./assets/fonts/zilla-slab/ZillaSlab-Regular.ttf');
+}
+@font-face {
+    font-family: 'zilla-slab';
+    src: url('./assets/fonts/zilla-slab/ZillaSlab-Light.ttf');
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'zilla-slab';
+    src: url( './assets/fonts/zilla-slab/ZillaSlab-Light.otf' format("opentype");
+    font-style: normal;
+    font-weight: 100;
+}
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+
+.post-agent-orange .uppercase { text-transform: uppercase; }
+.post-agent-orange .callout { border-top: 2px solid orange; border-bottom: 2px solid orange; padding: 1rem 1.5rem; font-weight: bold; }
+.post-agent-orange .float-left { float: left; }
+.post-agent-orange .float-right { float: right; }
+.post-agent-orange .caption-wrapper { position: absolute; height: 100%; }
+.post-agent-orange .caption { 
+    font-weight: bold;    
+    position: absolute;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+.post-agent-orange .social-icon-wd-container ul li a { height: auto !important; }
+.post-agent-orange .mdk-sng-pst p { font-family: 'Source Sans Pro', 'sans-serif' !important; }
+.post-agent-orange .mkd-content { background-color: #fff; }
+.post-agent-orange #title-block { 
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    left: 50%;
+    z-index: 1;
+    color: #fff;
+}
+.post-agent-orange #author-byline p { font-family: 'Source Sans Pro', sans-serif; padding-top: 1.5rem; }
+.post-agent-orange #top-caption {     
+    font-family: 'zilla-slab', serif;
+    line-height: 1.5rem;
+    font-weight: bold; 
+}
+
+.post-agent-orange #tagline p {
+    color: #fff;
+    font-family: 'menlo', 'sans-serif';
+    text-transform: uppercase;
+
+}
+.post-agent-orange #title h1 { 
+    color: #fff; 
+    font-family: 'boston-traffic', 'serif';
+    text-transform: uppercase;
+    border-bottom: 2px solid orange;
+}
+.relative { position: relative; }
+.post-agent-orange .ao_content_wrapper { background-color: #fff; }
+#agent-orange-person img { 
+    border: 4px solid #ff941d; 
+}
+#ao_person_group { position: relative; top: -50px; }
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+    .post-agent-orange #title h1 { 
+        font-size: 4rem;
+    }
+    .post-agent-orange #tagline p {
+        font-size: 2.5rem;
+    }
+    .post-agent-orange #top-caption {     
+        font-size: 1.5rem;
+    }
+    .post-agent-orange #author-byline p {
+        font-size: 1.5rem;
+    } 
+}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+

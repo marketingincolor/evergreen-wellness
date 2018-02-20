@@ -1,0 +1,20 @@
+2.1.0
+- Removed unnecessary comments in tooltip-animations.js
+- Removed unnecessary functions
+- Removed financial from list of categories
+- Removed duplicate scripts/styles from header
+- Removed all instances of "Wistia"
+- Created forms folder
+- Moved popup form into forms folder
+- Templated Popup Newsletter
+- Deleted empy js file
+- Removed DFP from production site (For now)
+- Updated formatting in header
+
+1.1.1
+- Updated Visual Composer to 4.11.2.1
+- Updated Revolution Slider to 5.2.5
+
+1.1
+- Updated Wordpress 4.5 update. JS fix for conflict with wp 4.5
+- Updated Visual Composer to 4.11.1
