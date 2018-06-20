@@ -8,6 +8,13 @@
 		<meta name="HandheldFriendly" content="True">
 		<meta name="MobileOptimized" content="320">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
+		
+		<?php if (is_page(8687)) { ?>
+			<meta property="og:title" content="Free! Jaime's 4-Pack Sampler | Evergreen Wellness®">
+			<meta property="og:description" content="For a limited time, get Jaime's 4-Pack Sampler for free, featuring workouts from four of his favorite programs.">
+			<meta property="og:image" content="/wp-content/uploads/2018/06/4-Pack-Sample-OG-Image.jpg">
+		<?php } ?>
+
 		<!-- Fonts & CSS -->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
@@ -15,34 +22,65 @@
 	  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/shopify-assets/foundation.min.css">
 	  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/shopify-assets/shopify.css">
 		<!-- End Fonts & CSS -->
+		<link rel=icon href=<?php echo get_stylesheet_directory_uri(); ?>/shopify-assets/img/egwbugsmall.png>
 		<script
   		src="https://code.jquery.com/jquery-3.3.1.min.js"
   		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   		crossorigin="anonymous"></script>
+  		<!-- Hotjar Tracking Code for myevergreenwellness.com -->
   		<script>
-  			var _ss = _ss || [];
-	      var __ss_noform = __ss_noform || [];
-				var callThisOnReturn = function(resp) {
-	        if (resp && resp.contact) {
-	          return false;
-	        } else{
-						$('#takeover-modal').foundation('open');
-	        }
-		    };
-				_ss.push(['_setResponseCallback', callThisOnReturn]);
-				_ss.push(['_setDomain', 'https://koi-3QMYANU21K.marketingautomation.services/net']);
-		    _ss.push(['_setAccount', 'KOI-3R4GIH0NK8']);
-		    _ss.push(['_trackPageView']);
-				(function() {
-				    var ss = document.createElement('script');
-				    ss.type = 'text/javascript'; ss.async = true;
-				    ss.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'koi-3QMYANU21K.marketingautomation.services/client/ss.js?ver=1.1.1';
-				    var scr = document.getElementsByTagName('script')[0];
-				    scr.parentNode.insertBefore(ss, scr);
-				})();
+  		    (function(h,o,t,j,a,r){
+  		        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+  		        h._hjSettings={hjid:748875,hjsv:6};
+  		        a=o.getElementsByTagName('head')[0];
+  		        r=o.createElement('script');r.async=1;
+  		        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+  		        a.appendChild(r);
+  		    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
   		</script>
+  		<!-- /Hotjar Tracking Code for myevergreenwellness.com -->
+		<script>
+			var _ss = _ss || [];
+      var __ss_noform = __ss_noform || [];
+			var callThisOnReturn = function(resp) {
+        if (resp && resp.contact) {
+          return false;
+        } else{
+					$('#takeover-modal').foundation('open');
+        }
+	    };
+			_ss.push(['_setResponseCallback', callThisOnReturn]);
+			_ss.push(['_setDomain', 'https://koi-3QMYANU21K.marketingautomation.services/net']);
+	    _ss.push(['_setAccount', 'KOI-3R4GIH0NK8']);
+	    _ss.push(['_trackPageView']);
+			(function() {
+			    var ss = document.createElement('script');
+			    ss.type = 'text/javascript'; ss.async = true;
+			    ss.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'koi-3QMYANU21K.marketingautomation.services/client/ss.js?ver=1.1.1';
+			    var scr = document.getElementsByTagName('script')[0];
+			    scr.parentNode.insertBefore(ss, scr);
+			})();
+		</script>
 	</head>
 	<body <?php body_class('jaimes-4-pack'); ?>>
+
+		<!-- GOOGLE TAG MANAGER -->
+		<?php if (ENVIRONMENT_MODE == 1) { ?>
+		<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-556TBH"
+		                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<script>(function (w, d, s, l, i) {
+		        w[l] = w[l] || [];
+		        w[l].push({'gtm.start':
+		                    new Date().getTime(), event: 'gtm.js'});
+		        var f = d.getElementsByTagName(s)[0],
+		                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+		        j.async = true;
+		        j.src =
+		                '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+		        f.parentNode.insertBefore(j, f);
+		    })(window, document, 'script', 'dataLayer', 'GTM-556TBH');</script>
+		<?php } ?>
+		<!-- END GOOGLE TAG MANAGER -->
 
 		<!-- NavBar -->
 		<div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">

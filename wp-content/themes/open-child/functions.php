@@ -8,6 +8,18 @@ add_image_size( 'mic_subcat', 350 );
 define("THE_VILLAGES_NAME", "The Villages");
 define("BALTIMORE_NAME", "Baltimore");
 
+// [orange-purchase-button link="https://mylink.com" text="Buy Now" target="_blank"] shortcode
+function orange_purchase_button( $atts ){
+    $a = shortcode_atts( array(
+        'link'   => '',
+        'text'   => '',
+        'target' => '_top',
+    ), $atts );
+
+    return '<div id="orange-btn" class=""><a href="'. $a['link'] .'" title="Button" style="color:#fff;" target="'. $a['target'] .'">'. $a['text'] .'  »</a></div>';
+}
+add_shortcode( 'orange-purchase-button', 'orange_purchase_button' );
+
 // Access Titles
 define("ACCESS_VILLAGE_CONTENT", "access_village_content");
 define("ACCESS_BALTIMORE_CONTENT", "access_baltimore_content");

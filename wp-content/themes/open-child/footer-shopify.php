@@ -29,12 +29,24 @@
 				showMobileNav();
 				sameColHeight();
 				validateForm();
+				populateVideo();
 			});
 
 			// match height of columns in .new section
 			function sameColHeight(){
 				var height = $('.new').find('.medium-5').css('height');
 				$('.new').find('.medium-6').css({ 'height':height });
+			}
+
+			// Populate video in #video-modal
+			function populateVideo(){
+				$('.video-link').click(function(){
+					var videoURL = $(this).data('video');
+					$('#video-modal').find('iframe').attr('src',videoURL);
+				});
+				$('#video-modal').bind('closed.zf.reveal',function(){
+					$('#video-modal').find('iframe').attr('src','');
+				});
 			}
 
 			// Shows foundation mobile nav under 767px width viewport
@@ -54,7 +66,7 @@
 				$('#error').html(message);
 			}
 
-			// Validaet form before sending
+			// Validate form before sending
 			function validateForm(){
 				$('#takeover-modal').find('#submit').click(function(event){
 					event.preventDefault();
@@ -77,10 +89,10 @@
 			function sendFormData(){
 				$.ajax({
 					type: 'POST',
-		  			success: function(data){
-		  				__ss_noform.push(['submit', null, '7e9cd5dc-4972-43b7-a96e-e07011db1198']);
-		      		$('#takeover-modal').foundation('close');
-		  			}
+	  			success: function(data){
+	  				__ss_noform.push(['submit', null, '7e9cd5dc-4972-43b7-a96e-e07011db1198']);
+	      		$('#takeover-modal').foundation('close');
+	  			}
 				});
 			}
 

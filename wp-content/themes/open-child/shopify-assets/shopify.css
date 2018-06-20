@@ -78,7 +78,7 @@
 .page-sales-kit-director2 #steps p {
   font-size: 1rem;
   color: #333;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .page-sales-kit-director2 #steps p:first-child {
   font-size: 1.5rem;
@@ -86,12 +86,41 @@
 .page-sales-kit-director2 #residents .row {
   margin-bottom: 0;
 }
+.page-sales-kit-director2 #takeover-modal{
+  padding-top: 7%;
+}
+.page-sales-kit-director2.page-28-day-challenge #takeover-modal h3,.page-sales-kit-director2.page-28-day-challenge #takeover-modal p,.page-sales-kit-director2.page-28-day-challenge #takeover-modal label, .page-sales-kit-director2.page-28-day-challenge #takeover-modal input,.page-sales-kit-director2.page-28-day-challenge #takeover-modal #accept-terms,.page-sales-kit-director2.page-28-day-challenge #takeover-modal #submit{
+  color:#54565b;
+}
+.page-sales-kit-director2 #takeover-modal h3{
+  font-size: 40px;
+}
+.page-sales-kit-director2.page-little-black-dress #takeover-modal #submit{
+  color:#c43b65;
+  width:auto;
+}
+.page-sales-kit-director2.page-28-day-challenge #takeover-modal #submit{
+  transition: all 0.25s ease-in-out;
+}
+.page-sales-kit-director2.page-28-day-challenge #takeover-modal #submit:hover{
+  background-color:#333!important;
+  color:#ffda00;
+}
+.page-sales-kit-director2 #takeover-modal .modal-content-mobile{
+  display:none;
+}
 @media (max-width: 767px) {
   .page-sales-kit-director2 #steps .row:first-of-type .columns {
     margin-bottom: 0;
   }
-  .page-sales-kit-director2 #steps p{
-    margin-bottom: 20px;
+  .page-sales-kit-director2.page-little-black-dress #takeover-modal #submit{
+    font-size: 14px;
+  }
+  .page-sales-kit-director2 #takeover-modal .modal-content-desktop{
+    display:none; 
+  }
+  .page-sales-kit-director2 #takeover-modal .modal-content-mobile{
+    display:block;
   }
 }
 @media (min-width: 641px) {
@@ -295,6 +324,21 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+.new .row{
+  max-width: 100%;
+}
+.new .meta{
+  width: 80%;
+}
+.new .play-column{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.new .play-column i{
+  font-size:60px;
+  color:#FFF;
+}
 .new h3{
   color:#FFF;
   font-weight: 300;
@@ -382,6 +426,10 @@
 .footer .youtube a{
   background-color: #ca1c27;
 }
+#video-modal iframe{
+  width:100%;
+  height: 318px;
+}
 #takeover-modal{
   padding-top: 12%;
 }
@@ -447,6 +495,12 @@
   .hero h2{
     font-size: 42px;
   }
+  .new .meta{
+    width: 85%;
+  }
+  .new p{
+    width: 100%;
+  }
 }
 @media(max-width:960px){
   .hero h2{
@@ -491,6 +545,9 @@
   .programs iframe{
     margin-bottom: 20px;
   }
+  .new .meta{
+    width: 100%;
+  }
 }
 @media(max-width:768px){
   .hero h2{
@@ -498,6 +555,23 @@
   }
 }
 @media(max-width:767px){
+  .top-bar-right{
+    height:auto;
+  }
+  .top-bar-right .menu li:last-of-type a{
+    background-color:#FFF;
+    color:#333;
+  }
+  .top-bar-right .menu li:last-of-type a i{
+    color:#ed8d2a;
+  }
+  .top-bar-right .menu, .top-bar-right .menu li{
+    height:auto;
+  }
+  .top-bar-right .menu li a{
+    height:auto;
+    padding: .7rem 1rem;
+  }
   .title-bar{
     background-color: #FFF;
     color:#333;
@@ -539,6 +613,9 @@
   .social h3{
     text-align: center;
   }
+  .social .medium-7{
+    width: 100%;
+  }
   .social .medium-5 {
     width: 220px;
     margin: 0 auto;
@@ -579,7 +656,32 @@
     margin-bottom: 20px;
     text-align: center;
   }
-
+  #video-modal{
+    height:auto;
+    min-height:auto;
+    top: 100px!important;
+  }
+  #video-modal iframe{
+    height:170px;
+  }
+  #takeover-modal label{
+    font-size: 16px;
+  }
+  #takeover-modal label[for=accept-terms]{
+    width: 90%;
+    margin-right: 0;
+  }
+  #takeover-modal #submit{
+    font-size: 14px;
+    width:auto;
+  }
+  #takeover-modal h3,.page-sales-kit-director2 #takeover-modal h3{
+    font-size: 36px;
+  }
+  #takeover-modal{
+    padding:7% 0!important;
+    top: 0!important;
+  }
 }
 @media(max-width:320px){
   .hero h2{

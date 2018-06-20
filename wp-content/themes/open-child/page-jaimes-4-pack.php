@@ -22,7 +22,7 @@
 				<div class="medium-6 columns text-col">
 					<h3>28-Day Size Down Challenge<sup>&trade;</sup></h3>
 					<p>An easy 8-minute, lower body workout sets you up to losing a size in 28 days when you follow the full program.</p>
-					<a href="https://shop.myevergreenwellness.com/products/28-day-size-down-challenge" class="button">Learn More</a>
+					<a href="https://shop.myevergreenwellness.com/products/28-day-size-down-challenge" class="button">See Full Program</a>
 				</div>
 			</div>
 			<div class="row mb50">
@@ -32,7 +32,7 @@
 				<div class="medium-6 columns text-col">
 					<h3>Rock the Walk 30-Day Challenge<sup>&trade;</sup></h3>
 					<p>Rock your abs by walking in place! It's a fun, low-impact, 8-minute workout set to Classic Rock.</p>
-					<a href="https://shop.myevergreenwellness.com/products/rock-the-walk" class="button">Learn More</a>
+					<a href="https://shop.myevergreenwellness.com/products/rock-the-walk" class="button">See Full Program</a>
 				</div>
 			</div>
 			<div class="row mb50">
@@ -42,7 +42,7 @@
 				<div class="medium-6 columns text-col">
 					<h3>Little Black Dress<sup>&trade;</sup></h3>
 					<p>Tone biceps, triceps, and thighs for 8 minutes to get closer to slipping into your little black dress!</p>
-					<a href="https://shop.myevergreenwellness.com/products/little-black-dress" class="button">Learn More</a>
+					<a href="https://shop.myevergreenwellness.com/products/little-black-dress" class="button">See Full Program</a>
 				</div>
 			</div>
 			<div class="row mb50">
@@ -52,7 +52,7 @@
 				<div class="medium-6 columns text-col">
 					<h3>Gentlemen, Restart Your Engines<sup>&trade;</sup></h3>
 					<p>Work your shoulders and biceps for 8 minutes and rev up energy!</p>
-					<a href="https://shop.myevergreenwellness.com/products/gentlemen-restart-your-engines" class="button">Learn More</a>
+					<a href="https://shop.myevergreenwellness.com/products/gentlemen-restart-your-engines" class="button">See Full Program</a>
 				</div>
 			</div>	
 		</div>
@@ -120,41 +120,38 @@
 	</div>
 </section>
 
-<section class="new" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/shopify-assets/img/new-bg-play.png);">
+<section class="new" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/shopify-assets/img/baila-new.png);">
 	<div class="row desktop">
-		<a href="#!" data-open="video-modal"><div class="medium-6 columns"></div></a>
+		<a href="#!" data-open="video-modal" data-video="https://player.vimeo.com/video/238470774" class="video-link"><div class="medium-6 columns play-column"><i class="fas fa-play-circle"></i></div></a>
 		<div class="medium-5 medium-offset-1 columns">
-			<h3>Look what's new at Evergreen Wellness<sup>&reg;</sup></h3>
-			<h4><em>Baila<sup>&trade;</sup></em></h4>
-			<p>Have fun burning calories with five different 20-minute Latin dance-inspired workouts.</p>
-			<a href="https://shop.myevergreenwellness.com/products/baila" class="button">Learn More</a>
+			<div class="meta">
+				<h3>Look what's new at Evergreen Wellness<sup>&reg;</sup></h3>
+				<h4><em>Baila<sup>&trade;</sup></em></h4>
+				<p>Have fun burning calories with five different 20-minute Latin dance-inspired workouts.</p>
+				<a href="https://shop.myevergreenwellness.com/products/baila" class="button">See Full Program</a>
+			</div>
 		</div>
 	</div>
 	<div class="row mobile">
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/shopify-assets/img/baila-play.png" alt="baila">
+		<a href="#!" data-open="video-modal" data-video="https://player.vimeo.com/video/238470774" class="video-link"><img src="<?php echo get_stylesheet_directory_uri(); ?>/shopify-assets/img/baila-play.png" alt="baila"></a>
 		<div class="small-12 columns copy">
 			<h3>Look what's new at Evergreen Wellness<sup>&reg;</sup></h3>
 			<h4><em>Baila<sup>&trade;</sup></em></h4>
 			<p>Have fun burning calories with five different 20-minute Latin dance-inspired workouts.</p>
-			<a href="https://shop.myevergreenwellness.com/products/baila" class="button">Learn More</a>
+			<a href="https://shop.myevergreenwellness.com/products/baila" class="button">See Full Program</a>
 		</div>
 	</div>
 </section>
 
 <!-- Video Modal -->
 <div class="reveal" id="video-modal" data-reveal>
-  <h1>Awesome. I Have It.</h1>
-  <p class="lead">Your couch. It is mine.</p>
-  <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
-  <button class="close-button" data-close aria-label="Close modal" type="button">
-    <span aria-hidden="true">&times;</span>
-  </button>
+  <iframe src="" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" data-ready="true"></iframe>
 </div>
 
 <!-- Takeover Modal -->
 <div class="full reveal" id="takeover-modal" data-reveal data-options="closeOnClick:false;closeOnEsc:false;" style="background: url(<?php echo get_stylesheet_directory_uri(); ?>/shopify-assets/img/takeover-bg.jpg) top no-repeat;background-size:cover;">
   <div class="row">
-  	<div class="medium-6 columns">
+  	<div class="medium-7 large-6 columns">
   		<h3>4 Free Workouts</h3>
   		<h4>Want a six pack? Start with Jaime's 4-Pack Sampler</h4>
   		<p>For a limited time, you can get Jaime's 4-Pack Sampler for FREE! That includes four of his favorite workouts in one fitness sampler. Try all four and find out why they bring results!</p>
@@ -164,7 +161,7 @@
         </label>
         <input name="accept-terms" id="accept-terms" type="checkbox" checked><label for="accept-terms">I accept your <a href="/terms-and-conditions" target="_blank" style="color:#fff;border-bottom:1px solid #FFF">terms &amp; conditions</a> and <a href="/privacy-policy" target="_blank" style="color:#fff;border-bottom:1px solid #FFF">privacy policy</a>.</label>
         <h4 id="error" style="display:none">Please enter a valid email</h4>
-        <div class="text-center"><input id="submit" class="button" type="submit" value="Get The 4-Pack"></div>
+        <div class="text-center"><input id="submit" class="button" type="submit" value="Get Your Free Workouts"></div>
   		</form>
   	</div>
   </div>
