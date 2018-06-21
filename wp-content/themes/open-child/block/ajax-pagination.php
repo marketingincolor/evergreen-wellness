@@ -72,7 +72,8 @@ $slug_page=basename(get_permalink()); //For retrieving current page slug and cha
             data: {
                 action: 'custom_scroll_post_load',
                 offset: parseInt(jQuery('#current_post').val()),
-                cat_id: '<?php echo $cat_id; ?>',
+                //cat_id: '<?php echo $cat_id; ?>',
+                <?php if ( $cat_id==0 ) { echo "cat_id:jQuery('#main_cat_id').val(),"; } else { echo "cat_id: '".$cat_id."',"; } ?>
                 post_type: '<?php echo implode(",",$post_type); ?>',
                 perpage: post_per_section,
                 main_cat_id:jQuery('#main_cat_id').val(),
