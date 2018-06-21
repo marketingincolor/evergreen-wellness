@@ -221,7 +221,11 @@ if(!isset($slug_page)) $slug_page=basename(get_permalink());
                 <?php } else { ?>
                 <input type="hidden" id="total_post" value="<?php echo mic_set_post_amount(); ?>">
                 <?php } ?>
+                <?php if( $slug_page == 'wellness-retreats') { ?>
+                <input type="hidden" id="main_cat_id" value="658"/>
+                <?php } else { ?>
                 <input type="hidden" id="main_cat_id" value="<?php echo $main_cat_id;  ?>"/>
+                <?php } ?>
                 <input type="hidden" id="slug_page" value="<?php echo $slug_page;  ?>"/>
                 <?php wp_reset_query();  // Restore global post data stomped by the_post().?>
             </div>
