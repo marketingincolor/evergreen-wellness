@@ -29,7 +29,8 @@
 				showMobileNav();
 				sameColHeight();
 				validateForm();
-				populateVideo();
+				populateBailaVideo();
+				populateSamplerVideo();
 			});
 
 			// match height of columns in .new section
@@ -39,13 +40,35 @@
 			}
 
 			// Populate video in #video-modal
-			function populateVideo(){
+			function populateBailaVideo(){
 				$('.video-link').click(function(){
 					var videoURL = $(this).data('video');
 					$('#video-modal').find('iframe').attr('src',videoURL);
 				});
 				$('#video-modal').bind('closed.zf.reveal',function(){
 					$('#video-modal').find('iframe').attr('src','');
+				});
+			}
+
+			// Populate video in #sampler-modal
+			function populateSamplerVideo(){
+				var $modal   = $('#sampler-modal');
+				$('.open-video').click(function(){
+					var videoURL = $(this).data('video');
+					var title    = $(this).data('title');
+					var body     = $(this).data('body');
+					var copy     = $(this).data('copy');
+					var link     = $(this).data('link');
+
+					$modal.find('iframe').attr('src',videoURL);
+					$modal.find('#sampler-title').html(title);
+					$modal.find('#sampler-body').html(body);
+					$modal.find('#sampler-copy').html(copy);
+					$modal.find('#sampler-link').attr('href',link);
+				});
+
+				$modal.bind('closed.zf.reveal',function(){
+					$modal.find('iframe').attr('src','');
 				});
 			}
 

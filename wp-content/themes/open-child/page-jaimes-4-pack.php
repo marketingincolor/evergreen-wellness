@@ -4,7 +4,7 @@
 <section class="hero" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/shopify-assets/img/4-pack-hero.jpg);">
 	<div class="row">
 		<div class="medium-6 columns">
-			<h2>Free 4-Pack Sampler consists of fun workouts that deliver results!</h2>
+			<h2>Here are your four <strong>FREE</strong> workouts!</h2>
 		</div>
 		<div class="medium-6 columns">
 			<img src="<?php echo get_stylesheet_directory_uri(); ?>/shopify-assets/img/jaime.png" alt="">
@@ -14,91 +14,24 @@
 
 <section class="programs" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/shopify-assets/img/programs-bg.jpg);">
 	<div class="row">
-		<div class="medium-6 columns">
-			<div class="row mb50">
-				<div class="medium-6 columns video-col">
-					<iframe src="https://player.vimeo.com/video/274702997" width="1280" height="720" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" data-ready="true"></iframe>
-				</div>
-				<div class="medium-6 columns text-col">
-					<h3>28-Day Size Down Challenge<sup>&trade;</sup></h3>
-					<p>An easy 8-minute, lower body workout sets you up to losing a size in 28 days when you follow the full program.</p>
-					<a href="https://shop.myevergreenwellness.com/products/28-day-size-down-challenge" class="button">See Full Program</a>
-				</div>
-			</div>
-			<div class="row mb50">
-				<div class="medium-6 columns video-col">
-					<iframe src="https://player.vimeo.com/video/274714353" width="1280" height="720" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" data-ready="true"></iframe>
-				</div>
-				<div class="medium-6 columns text-col">
-					<h3>Rock the Walk 30-Day Challenge<sup>&trade;</sup></h3>
-					<p>Rock your abs by walking in place! It's a fun, low-impact, 8-minute workout set to Classic Rock.</p>
-					<a href="https://shop.myevergreenwellness.com/products/rock-the-walk" class="button">See Full Program</a>
-				</div>
-			</div>
-			<div class="row mb50">
-				<div class="medium-6 columns video-col">
-					<iframe src="https://player.vimeo.com/video/274711056" width="1280" height="720" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" data-ready="true"></iframe>
-				</div>
-				<div class="medium-6 columns text-col">
-					<h3>Little Black Dress<sup>&trade;</sup></h3>
-					<p>Tone biceps, triceps, and thighs for 8 minutes to get closer to slipping into your little black dress!</p>
-					<a href="https://shop.myevergreenwellness.com/products/little-black-dress" class="button">See Full Program</a>
-				</div>
-			</div>
-			<div class="row mb50">
-				<div class="medium-6 columns video-col">
-					<iframe src="https://player.vimeo.com/video/274706395" width="1280" height="720" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" data-ready="true"></iframe>
-				</div>
-				<div class="medium-6 columns text-col">
-					<h3>Gentlemen, Restart Your Engines<sup>&trade;</sup></h3>
-					<p>Work your shoulders and biceps for 8 minutes and rev up energy!</p>
-					<a href="https://shop.myevergreenwellness.com/products/gentlemen-restart-your-engines" class="button">See Full Program</a>
-				</div>
-			</div>	
+		<div class="medium-10 medium-offset-1 columns">
+			<h3>Your four FREE workouts are below! Click on the play button to start each of your 8-minute workouts.</h3>
 		</div>
-		<div class="medium-5 medium-offset-1 columns">
-			<div class="text-center">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/shopify-assets/img/jb-logo.png" alt="Jaime Brenkus Logo" class="jb-logo">
-			</div>
-			<aside class="sample-menu">
-				<h3 class="text-center head">Sample Menu</h3>
-				<p class="text-center subhead">28-Day Size Down Challenge | Day 5</p>
-				<div class="menu-time">
-					<p>Breakfast</p>
-					<ul>
-						<li>1 whole wheat English muffin</li>
-						<li>1 Tbsp. peanut butter</li>
-						<li>½ grapefruit</li>
-						<li>½ cup low-fat cottage cheese</li>
-					</ul>
-				</div>
-				<div class="menu-time">
-					<p>Lunch</p>
-					<ul>
-						<li>2 cups romaine lettuce</li>
-						<li>1/3 cup cooked pasta</li>
-						<li>½ cup diced tomatoes and cooked zucchini</li>
-						<li>2 Tbsp. reduced-fat Italian dressing</li>
-						<li>2 (4-in.) rice cakes</li>
-					</ul>
-				</div>
-				<div class="menu-time">
-					<p>Snack</p>
-					<ul>
-						<li>6 oz. low-fat yogurt</li>
-					</ul>
-				</div>
-				<div class="menu-time">
-					<p>Dinner</p>
-					<ul>
-						<li>3 oz. skinless chicken breast (grilled or baked)</li>
-						<li>1 small sweet potato with spray butter</li>
-						<li>1 tsp. reduced-fat margarine</li>
-						<li>1 small dinner roll</li>
-						<li>1 cup vegetable side salad with 1 Tbsp. reduced-fat dressing</li>
-					</ul>
-				</div>
-			</aside>
+		<div class="medium-6 columns">
+			<a href="#!" data-open="sampler-modal" class="open-video" data-video="https://player.vimeo.com/video/274702997" data-title="28-Day Size Down  Challenge<sup>&trade;</sup>" data-body="Lower Body" data-copy="Your lower body workout includes lunges, deadlifts, squats, calf raises, buns kicks, and buns lifts." data-link="https://shop.myevergreenwellness.com/products/28-day-size-down-challenge"><img src="<?php echo get_stylesheet_directory_uri(); ?>/shopify-assets/img/28-video.png" alt="28-day challenge"></a>
+			<h4 class="text-center">28-Day Size Down<br class="hide-for-small-only"> Challenge<sup>&trade;</sup> Sampler</h4>
+		</div>
+		<div class="medium-6 columns">
+			<a href="#!" data-open="sampler-modal" class="open-video" data-video="https://player.vimeo.com/video/274714353" data-title="Rock the Walk <sup>&trade;</sup>" data-body="Abs" data-copy="Your workout consists of walking in place, elbows opposite knees, leg touches, side crunch leg ups, crunch forwards, knee ups with twist, squats, side steps with punches, kicks with twists, touch legs with opposite knees, crunches with leg coming up, reach ups and across/knees up." data-link="https://shop.myevergreenwellness.com/products/rock-the-walk"><img src="<?php echo get_stylesheet_directory_uri(); ?>/shopify-assets/img/rtw-video.png" alt="rock the walk"></a>
+			<h4 class="text-center">Rock the Walk 30-Day<br class="hide-for-small-only"> Challenge<sup>&trade;</sup> Sampler</h4>
+		</div>
+		<div class="medium-6 columns">
+			<a href="#!" data-open="sampler-modal" class="open-video" data-video="https://player.vimeo.com/video/274711056" data-title="Little Black Dress<sup>&trade;</sup>" data-body="Upper Body" data-copy="Your workout begins with bicep, tricep, and thigh exercises, including lunges, punches, squats, overhead extensions, bicep curls, kickbacks, hammer curls, squats/bunny hops, speed skaters, and half knees." data-link="https://shop.myevergreenwellness.com/products/litle-black-dress"><img src="<?php echo get_stylesheet_directory_uri(); ?>/shopify-assets/img/lbd-video.png" alt="little black dress"></a>
+			<h4 class="text-center">Little Black Dress<sup>&trade;</sup> Sampler</h4>
+		</div>
+		<div class="medium-6 columns">
+			<a href="#!" data-open="sampler-modal" class="open-video" data-video="https://player.vimeo.com/video/274706395" data-title="Gentlemen, Restart Your Engines<sup>&trade;</sup>" data-body="Shoulder &amp; Biceps" data-copy="Ready to work your shoulders and biceps? This awesome routine includes squats, windmills, lateral raises, standing rows, jumping jacks, shoulder presses, bicep curls, front raises, side bends, kettle swings, lunges, and jogging." data-link="https://shop.myevergreenwellness.com/products/gentlemen-restart-your-engines"><img src="<?php echo get_stylesheet_directory_uri(); ?>/shopify-assets/img/gyre-video.png" alt="gentlemen restart your engines"></a>
+			<h4 class="text-center">Gentlemen, Restart Your<br class="hide-for-small-only"> Engines<sup>&trade;</sup> Sampler</h4>
 		</div>
 	</div>
 </section>
@@ -143,18 +76,31 @@
 	</div>
 </section>
 
-<!-- Video Modal -->
+<!-- Baila Modal -->
 <div class="reveal" id="video-modal" data-reveal>
   <iframe src="" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" data-ready="true"></iframe>
+</div>
+
+<!-- Sampler Modal -->
+<div class="reveal" id="sampler-modal" data-reveal>
+	<h2 id="sampler-title"></h2>
+	<h4 id="sampler-body"></h4>
+  <iframe src="" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" data-ready="true"></iframe>
+  <p id="sampler-copy"></p>
+  <p class="text-center"><a href="" id="sampler-link">Purchase Full Program</a></p>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
 </div>
 
 <!-- Takeover Modal -->
 <div class="full reveal" id="takeover-modal" data-reveal data-options="closeOnClick:false;closeOnEsc:false;" style="background: url(<?php echo get_stylesheet_directory_uri(); ?>/shopify-assets/img/takeover-bg.jpg) top no-repeat;background-size:cover;">
   <div class="row">
   	<div class="medium-7 large-6 columns">
-  		<h3>4 Free Workouts</h3>
-  		<h4>Want a six pack? Start with Jaime's 4-Pack Sampler</h4>
-  		<p>For a limited time, you can get Jaime's 4-Pack Sampler for FREE! That includes four of his favorite workouts in one fitness sampler. Try all four and find out why they bring results!</p>
+  		<h3>4 Free Workout Videos</h3>
+  		<h4>Start with our FREE 4-Pack Sampler</h4>
+  		<p class="hide-for-small">For a limited time, you can get our 4-Pack Wourkout Sampler for FREE! That includes four of our favorite workouts in one fitness sampler. Try all four and find out why they bring real results!</p>
+  		<p class="show-for-small-only">That includes four of our favorite workouts in one fitness sampler. Try all four and find out why they bring real results!</p>
   		<form action="" id="takeover-form">
   			<label for="email">Enter Your Email Address
           <input name="email" id="email" type="email">
