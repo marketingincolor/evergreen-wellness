@@ -7,19 +7,7 @@ $url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 <div class="widget mkd-rpc-holder">
 <?php endif; ?>
     <div class="news-field-row" id="form-container-side">
-        <h3 class="news-field-cta-title">Get FREE Wellness Tips Delivered!</h3>
-        <div class="news-field-cta-form">
-            <form action="" id="side-news-form" method="post" class="not-wpcf7-form" enctype="multipart/form-data">
-                <div class="form-control-wrap side-alert"> </div>
-                <input type="hidden" name="form_title" value="Newsletter CTA"/>
-                <input id="page-url" type="hidden" name="page_url" value="<?php echo $url; ?>" />
-                <div class="form-control-wrap your-email"><input type="email" id="your-email" name="your-email" placeholder=" EMAIL ADDRESS" value="" size="40" /></div>
-                <div class="form-control-wrap your-zip"><input type="text" id="your-zip" name="your-zip" value="" placeholder=" ZIP CODE" size="40" /></div>
-                <div class="form-control-wrap your-terms"><input type="checkbox" checked value="" id="news-side-terms" class="form-control terms" />I accept your<br/><a href="https://myevergreenwellness.com/terms-and-conditions/" target="_blank">Terms &amp; Conditions</a></div>
-                <div class="form-control-wrap side-submit"><input type="submit" id="news-side-submit" value="Sign Me Up!" class="form-control submit" /></div>
-                <?php //do_shortcode('[ssnfinclude placement="side"]'); ?>
-            </form>
-        </div>
+        <a href="/jaimes-4-pack-sampler"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/4-pack-side-bar-ad.jpg" alt="get 4 free 8-minute workouts"></a>
     </div>
 </div>
 <?php $ssform = ( ENVIRONMENT_MODE == 0 ) ? 'ba3745d9-b382-4197-b0f2-ed587005b1b7' : '8c3dc976-1925-4b51-a875-ae8bf4d1e9b0'; ?>

@@ -14,7 +14,6 @@
 			</ul>
 			<p class="copyright">&copy; <?php echo date('Y'); ?> Evergreen Wellness<sup>&trade;</sup>, LLC. All Rights Reserved. | Powered by Shopify</p>
 		</footer>
-
 		
 		<script src="<?php echo get_stylesheet_directory_uri(); ?>/shopify-assets/foundation.min.js"></script>
 		<script>
@@ -113,8 +112,17 @@
 				$.ajax({
 					type: 'POST',
 	  			success: function(data){
-	  				__ss_noform.push(['submit', null, '7e9cd5dc-4972-43b7-a96e-e07011db1198']);
-	      		$('#takeover-modal').foundation('close');
+
+	  				if (location.href.includes('jaimes-4-pack')) {
+
+		  				__ss_noform.push(['submit', null, '7e9cd5dc-4972-43b7-a96e-e07011db1198']);
+
+	  				}else if(location.href.includes('dani-4-pack')){
+
+	  					__ss_noform.push(['submit', null, 'f7c7b936-bd1d-443e-b454-52f5eeef19a4']);
+
+	  				}
+		      	$('#takeover-modal').foundation('close');
 	  			}
 				});
 			}

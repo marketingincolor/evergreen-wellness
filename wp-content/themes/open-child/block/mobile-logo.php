@@ -2,7 +2,7 @@
 
 <div class="mkd-mobile-logo-wrapper">
     <a href="<?php echo esc_url(home_url('/')); ?>" <?php discussion_inline_style($logo_styles); ?>>
-        <img src="<?php echo esc_url($logo_image); ?>" alt="<?php esc_html_e('mobile-logo','discussionwp'); ?>"/>
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/egw-logo-mobile.png" alt="<?php esc_html_e('mobile-logo','discussionwp'); ?>"/>
     </a>
 </div>
 <?php

@@ -304,8 +304,8 @@ For setting main blog style adjustment
 
 /*Newsletter CTA*/
 .foot-cta { text-align:center; margin-bottom:2em; }
-.news-field-row { border:1.5em solid #8b54a2; background-color:#fff; font-family:"Roboto"; }
-#form-container-side { border:18px solid #8b54a2; background-color:#fff;}
+.news-field-row { border:5px solid #8b54a2; background-color:#8b54a2; font-family:"Roboto"; }
+#form-container-side { border:0; background-color:#8b54a2;}
 /*#form-container-side-events { border:18px solid #3a7d3b; background-color:#fff;}*/
 #form-container-pop { border:2em solid #8b54a2; background-color:#fff;}
 .news-field-row h3 { text-align:center; text-transform:none; padding:10px; font-size:24px; font-weight:600; }

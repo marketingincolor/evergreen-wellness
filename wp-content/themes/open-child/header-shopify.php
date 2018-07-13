@@ -8,12 +8,18 @@
 		<meta name="HandheldFriendly" content="True">
 		<meta name="MobileOptimized" content="320">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
-		
+
+		<!-- OpenGraph Tags -->
 		<?php if (is_page(8687)) { ?>
 			<meta property="og:title" content="Free! Jaime's 4-Pack Sampler | Evergreen Wellness®">
 			<meta property="og:description" content="For a limited time, get Jaime's 4-Pack Sampler for free, featuring workouts from four of his favorite programs.">
-			<meta property="og:image" content="/wp-content/uploads/2018/06/4-Pack-Sample-OG-Image.jpg">
+			<meta property="og:image" content="https://myevergreenwellness.com/wp-content/uploads/2018/06/4-Pack-Sample-OG-Image.jpg">
+		<?php }else if(is_page(8752)){ ?>
+			<meta property="og:title" content="Free! Jaime's 4-Pack Sampler | Evergreen Wellness®">
+			<meta property="og:description" content="Dani Spies recommends Jaime's Free 4-Pack Sampler, featuring workouts from four of his favorite programs.">
+			<meta property="og:image" content="https://myevergreenwellness.com/wp-content/uploads/2018/06/dani-og-image.jpg">
 		<?php } ?>
+		<!-- End OpenGraph Tags -->
 
 		<!-- Fonts & CSS -->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
@@ -40,29 +46,37 @@
   		</script>
   		<!-- /Hotjar Tracking Code for myevergreenwellness.com -->
 		<script>
-			var _ss = _ss || [];
-      var __ss_noform = __ss_noform || [];
-			var callThisOnReturn = function(resp) {
-        if (resp && resp.contact) {
-          return false;
-        } else{
-					$('#takeover-modal').foundation('open');
-        }
-	    };
+				var _ss = _ss || [];
+	      var __ss_noform = __ss_noform || [];
+				var callThisOnReturn = function(resp) {
+	        if (resp && resp.contact) {
+	          return false;
+	        } else{
+						$('#takeover-modal').foundation('open');
+	        }
+		    };
+				
 			_ss.push(['_setResponseCallback', callThisOnReturn]);
-			_ss.push(['_setDomain', 'https://koi-3QMYANU21K.marketingautomation.services/net']);
-	    _ss.push(['_setAccount', 'KOI-3R4GIH0NK8']);
-	    _ss.push(['_trackPageView']);
-			(function() {
-			    var ss = document.createElement('script');
-			    ss.type = 'text/javascript'; ss.async = true;
-			    ss.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'koi-3QMYANU21K.marketingautomation.services/client/ss.js?ver=1.1.1';
-			    var scr = document.getElementsByTagName('script')[0];
-			    scr.parentNode.insertBefore(ss, scr);
-			})();
+				_ss.push(['_setDomain', 'https://koi-3QMYANU21K.marketingautomation.services/net']);
+		    _ss.push(['_setAccount', 'KOI-3R4GIH0NK8']);
+		    _ss.push(['_trackPageView']);
+				(function() {
+				    var ss = document.createElement('script');
+				    ss.type = 'text/javascript'; ss.async = true;
+				    ss.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'koi-3QMYANU21K.marketingautomation.services/client/ss.js?ver=1.1.1';
+				    var scr = document.getElementsByTagName('script')[0];
+				    scr.parentNode.insertBefore(ss, scr);
+				})();
 		</script>
 	</head>
-	<body <?php body_class('jaimes-4-pack'); ?>>
+	<?php 
+		if (is_page(8687)) {
+		  $body_class = array('jaimes-4-pack');
+	  }else if(is_page(8752)){
+	  	$body_class = array('jaimes-4-pack','danis-4-pack');
+	  }
+	?>
+	<body <?php body_class($body_class); ?>>
 
 		<!-- GOOGLE TAG MANAGER -->
 		<?php if (ENVIRONMENT_MODE == 1) { ?>

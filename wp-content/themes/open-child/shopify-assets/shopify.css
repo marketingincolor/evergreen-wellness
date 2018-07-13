@@ -143,9 +143,18 @@
 .jaimes-4-pack .mb50{
   margin-bottom: 50px;
 }
-.jaimes-4-pack p,.jaimes-4-pack label,.jaimes-4-pack input,.jaimes-4-pack li,.jaimes-4-pack a,.jaimes-4-pack h2,.jaimes-4-pack h3{
+.jaimes-4-pack p,.jaimes-4-pack sup,.jaimes-4-pack label,.jaimes-4-pack h4,.jaimes-4-pack input,.jaimes-4-pack li,.jaimes-4-pack a,.jaimes-4-pack h2,.jaimes-4-pack h3{
   font-family: 'Montserrat';
   color:#333;
+}
+.jaimes-4-pack.is-reveal-open{
+  overflow-y: scroll;
+}
+.jaimes-4-pack.is-reveal-open .reveal.full{
+  overflow-y: scroll;
+}
+html.is-reveal-open{
+  overflow-y: scroll;
 }
 .top-bar{
   display: block;
@@ -259,7 +268,10 @@
 }
 .programs h4{
   font-size: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+}
+.programs .bottom-row{
+  margin-bottom: 0;
 }
 .social{
   background-color: #ce0f69;
@@ -300,7 +312,7 @@
   padding: 7% 0;
   background-size:cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
 }
 .new .row{
   max-width: 100%;
@@ -315,6 +327,9 @@
 }
 .new .play-column i{
   font-size:60px;
+  color:#FFF;
+}
+.new sup{
   color:#FFF;
 }
 .new h3{
@@ -333,16 +348,17 @@
   color:#FFF;
   width: 80%;
 }
-.new .button{
+.new .button,.learn-more a{
   background-color: #ff671f;
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 25px;
   padding: .85em 2.5em;
   color:#FFF;
+  font-size: 18px;
   transition: background-color 0.2s ease-in-out;
 }
-.new .button:hover{
+.new .button:hover,.learn-more a:hover{
   background-color:rgba(255, 103, 31, 0.85);
 }
 .footer{
@@ -434,6 +450,10 @@
   padding: 15px 25px;
   border-radius:30px;
   font-weight: 700;
+  transition: opacity 0.2s ease-in-out;
+}
+#sampler-modal #sampler-link:hover{
+  opacity:0.8;
 }
 #sampler-modal .close-button{
   color:#97999b;
@@ -450,7 +470,7 @@
   height: 318px;
 }
 #takeover-modal{
-  padding-top: 12%;
+  padding-top: 8%;
 }
 #takeover-modal h3{
   color:#FFF;
@@ -463,6 +483,9 @@
   font-size: 36px;
   margin-bottom: 20px;
   line-height: 1.2em;
+}
+#takeover-modal sup{
+  color:#FFF;
 }
 #takeover-modal p{
   color:#FFF;
@@ -505,6 +528,109 @@
   font-size: 22px;
 }
 
+/*******************************/
+/* Danis 4-Pack */
+/*******************************/
+.danis-4-pack .social{
+  background-color:#41b6e6;
+  padding: 3% 0;
+}
+.danis-4-pack .social a:hover i{
+  color:#41b6e6; 
+}
+.social .social-container{
+  max-width:650px;
+  margin: 0 auto;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.social .left-col{
+  width:430px;
+}
+.social .right-col{
+  width:220px;
+  height: 80px;
+  position:relative;
+}
+.social .social-links{
+  position:absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  margin-left: 20px;
+}
+.social .social-links a{
+  top: 0;
+}
+.coupon{
+  background: url(../shopify-assets/img/coupon-bg.jpg) center center no-repeat;
+  background-size: cover;
+  padding: 5% 0 7%;
+  text-align: center;
+}
+.coupon h3,.coupon a,.coupon p{
+  color:#FFF;
+  text-align: center;
+}
+.coupon h3{
+  font-size: 50px;
+  font-weight: 300;
+}
+.coupon p{
+  max-width: 550px;
+  margin:0 auto;
+}
+.coupon p:first-of-type{
+  margin:0 auto 30px;
+  font-size: 18px;
+}
+.coupon a{
+  font-size: 28px;
+  font-weight: 700;
+  background-color:#d6508f;
+  border:3px dashed #FFF;
+  padding: 10px 60px;
+  border-radius:30px;
+  transition: opacity 0.25s ease-in-out;
+}
+.coupon a:hover{
+  opacity:0.8;
+}
+.learn-more{
+  padding: 5% 0;
+}
+.learn-more .row{
+  display:flex;
+}
+.learn-more aside{
+  width: 50%;
+  padding: 0 10%;
+  min-height: 275px;
+  position:relative;
+}
+.learn-more aside:first-of-type{
+  border-right:1px solid #97999b;
+}
+.learn-more aside .cta{
+  position:absolute;
+  bottom:0;
+  left: 0;
+  width: 100%;
+}
+.learn-more aside:first-of-type img{
+  max-width: 250px;
+  margin-top: -25px;
+}
+.learn-more img{
+  margin-bottom: 20px;
+}
+.learn-more .copy{
+  margin-bottom: 40px;
+}
+
 @media(max-width:1100px){
   .jaimes-4-pack .row{
     max-width: 62.5rem;
@@ -524,6 +650,10 @@
 @media(max-width:960px){
   .hero h2{
     font-size: 34px;
+  }
+  .learn-more aside{
+    min-height: 315px;
+    padding: 0 6%;
   }
 }
 @media(max-width:814px){
@@ -564,8 +694,14 @@
   .programs iframe{
     margin-bottom: 20px;
   }
+  .social .medium-5{
+    padding-top: 25px;
+  }
   .new .meta{
     width: 100%;
+  }
+  .learn-more {
+    padding: 7% 0 5%;
   }
 }
 @media(max-width:768px){
@@ -574,6 +710,18 @@
   }
 }
 @media(max-width:767px){
+  #takeover-modal{
+    background: url(../shopify-assets/img/takeover-bg-mobile.jpg) right center no-repeat!important;
+    background-size:cover!important;
+  }
+  .danis-4-pack #takeover-modal{
+    background: url(../shopify-assets/img/dani-takeover-mobile.jpg) center center no-repeat!important;
+    background-size:cover!important; 
+  }
+  #accept-terms{
+    position: relative;
+    top: -20px;
+  }
   .top-bar-right{
     height:auto;
   }
@@ -608,11 +756,23 @@
     width: 100%;
     text-align: center;
   }
-  .hero h2{
+  .hero h2,.danis-4-pack .hero h2{
     padding: 0 0 30px;
   }
+  .programs{
+    padding: 10% 2%;
+  }
+  .programs h3{
+    margin-bottom: 25px;
+  }
+  .programs .bottom-row{
+    margin-bottom: 30px;
+  }
+  .programs .bottom-row.last{
+    margin-bottom: 0;
+  }
   .social{
-    padding: 5% 2% 10%;
+    padding: 10% 2% 15%;
   }
   .social h3{
     text-align: center;
@@ -629,6 +789,26 @@
   .social a:last-of-type{
     margin-right: 0;
   }
+  .danis-4-pack .social{
+    padding: 5%;
+  }
+  .social .left-col{
+    width:100%;
+    max-width: 480px;
+  }
+  .social .right-col{
+    width:100%;
+    height:80px;
+    position:relative;
+    max-width: 480px;
+  }
+  .social .social-links{
+    width: auto;
+    min-width: 200px;
+    margin-left: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
   .sample-menu{
     padding: 30px;
   }
@@ -643,8 +823,12 @@
     display: none;
   }
   .new .mobile .copy{
-    padding: 5%;
+    padding: 8% 5%;
     background-color: #333;
+  }
+  .new .baila-link{
+    text-align: center;
+    margin-bottom: 0;
   }
   .footer{
     padding: 7%;
@@ -710,6 +894,27 @@
     padding:7% 0!important;
     top: 0!important;
   }
+  .coupon{
+    padding: 5% 5% 12%;
+  }
+  .coupon h3{
+    line-height: 1.2;
+  }
+  .learn-more .row{
+    display:block;
+  }
+  .learn-more aside{
+    width: 100%;
+    border:none!important;
+    min-height: auto;
+    padding: 7%;
+  }
+  .learn-more aside:first-of-type{
+    padding-top: 10%;
+  }
+  .learn-more aside .cta{
+    position:static;
+  }
 }
 @media(max-width:414px){
   #sampler-modal iframe{
@@ -734,6 +939,9 @@
   }
   #sampler-modal #sampler-link{
     font-size: 14px;
+  }
+  .new .button, .learn-more a{
+    font-size: 15px;
   }
 }
 
